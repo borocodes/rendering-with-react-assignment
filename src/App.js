@@ -1,6 +1,7 @@
 import React from "react";
 import Header from"./Header"
 import HobbyList from "./HobbyList"
+import ActivityList from "./ActivityList";
 
 function App() {
   const name = "Kitty Kat";
@@ -21,7 +22,8 @@ function App() {
    return (
      <div>
       <Header name={name} birthday={birthday} imageSrc={imageSrc} />
-      <HobbyList />
+      <HobbyList hobbies={hobbies} />
+      <ActivityList activities={dailyActivities} />
       </div>
     )
 }

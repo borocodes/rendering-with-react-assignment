@@ -8,7 +8,7 @@ function HobbyList({ hobbies }) {
       <h4>Hobbies</h4>
       <ul>
         {hobbies.map((hobby, index) => (
-          <li key={hobby}>index</li>
+          <li key={hobby}>{index}</li>
         ))}
       </ul>
     </div>
