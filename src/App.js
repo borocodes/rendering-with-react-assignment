@@ -1,6 +1,6 @@
 import React from "react";
-import Header from"./Header"
-import HobbyList from "./HobbyList"
+import Header from "./Header";
+import HobbyList from "./HobbyList";
 import ActivityList from "./ActivityList";
 
 function App() {
@@ -19,13 +19,13 @@ function App() {
     { time: "7:00 pm", description: "play" },
     { time: "10:00 pm", description: "bedtime" },
   ];
-   return (
-     <div>
+  return (
+    <div>
       <Header name={name} birthday={birthday} imageSrc={imageSrc} />
       <HobbyList hobbies={hobbies} />
       <ActivityList activities={dailyActivities} />
-      </div>
-    )
+    </div>
+  );
 }
 
 export default App;
